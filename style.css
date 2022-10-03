@@ -1,0 +1,57 @@
+/* new CSS file for DESN 340 Project 1 Part 2 */
+
+
+#body{
+	background-size: contain;
+	font-family: 'Inter Tight', sans-serif;
+	color: darkblue;
+	background-color: orange;
+}
+
+#mask /* Ask Alex: how do i round image corners and resize gif; */ {
+	border-radius: 50%;
+	padding: 30px 10px 10px 10px;
+}
+
+#img {
+	width: 650px;
+	height: auto;
+	padding: 30px 10px 10px 10px;
+}
+
+#h1 {
+	font-family: 'Monoton', cursive;
+	color: darkblue;
+}
+
+#h2 {
+	font-family: 'Inter Tight', sans-serif;
+	color: darkred;
+}
+
+
+#h3 {
+	font-family: 'Rajdhani', sans-serif;
+	color: black;
+	font-size:60px;
+}
+
+#stylish {
+	font-family: 'Rajdhani', sans-serif;
+	color: purple;
+	font-size:2em;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 15px;
+
+}
