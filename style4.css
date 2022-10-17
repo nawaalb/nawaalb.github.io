@@ -1,0 +1,138 @@
+/* This will be my CSS file for P1 - Part 3 */
+
+html { /* Ask ALex to explain this*/ 
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+}
+
+.images {
+	width: 500px;
+	margin: 0px auto;
+}
+
+.lego {
+	width: 90%;
+	border: 15px solid black;
+	padding: 30px;
+	margin: auto;
+	border-radius: 25px;
+	background-color: #ffe330;
+	font-family: helvetica;
+}
+
+.giza {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.paris {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.tokyo {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.liberty {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.singapore {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.new {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.london {
+	width: ;
+	border: ;
+	padding: ;
+	margin: 30px;
+	background-color: #fff;
+}
+
+.button {
+	margin: 30px;
+	text-align: center;
+	border: none;
+	color: #000;
+	padding: 15px 32px;
+	border-radius: 10px;
+	background-color: rgb(179, 217, 251);
+  	text-decoration: none;
+  	font-family: helvetica;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+#logo {
+	width: 15%;
+	height: auto;
+}
+
+
+body {
+	background-color: rgb(248, 208, 71);
+	background-image: url(https://images.unsplash.com/photo-1589254066007-898d52d910d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
+	background-size: contain;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+#Explore {
+	color: green;
+}
+
+
+
+
