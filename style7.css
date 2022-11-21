@@ -1,0 +1,1037 @@
+/* Stylesheet for the 53 redesign MINE BEFORE I MESSED IT UP
+
+
+Colors: ;
+White
+Black
+Red highlight
+Contrast button color #ef57d4
+
+
+Monteserrat for main titles 
+eaves for body text
+
+
+
+*/
+
+/* Visualizing the layout */
+
+
+
+
+
+
+/* This section is for universal selections and rules */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+img {
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "GT-Super";
+    src: url("GT-Super-Display-Super.woff2");
+}
+
+@font-face {
+	font-family: "GT-Medium";
+	src: url("GT-Super-Display-Medium.woff2");
+}
+
+@font-face {
+	font-family: "GT-Light";
+	src: url("GT-Super-Display-Regular.woff2");
+}
+
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #ffeae7; /* Background colour has changed  #ffeae7  #F9F9F1 */
+	background-color: ;
+	background-color: ;
+	
+	background-image: url(woood.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	position: fixedd;
+}
+
+body#products {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: rgb(246, 246, 239); /* Background colour has changed  #ffeae7  #F9F9F1 */
+}
+	
+
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	margin: 1;
+}
+
+h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: "GT-Super";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poppins';
+}
+
+a:hover {
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* header styles and rules */
+
+header {
+	background-color: #153b84;
+	color: #fff;
+	position: fixed;
+	height: 90px;
+	z-index: 6;
+	font-size: 0.7em;
+}
+
+.icon {
+	fill:  whitesmoke;
+}
+
+header li {
+	float: left;
+	margin-left: 18px;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 120px;
+	margin-top: 15px;
+}
+
+
+#search {
+	display: inline-block;
+	border-style: solid;
+	border-color: #fff;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	border-radius: 30px;
+	width: 310px;
+}
+
+#search a {
+	line-height: 100px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+/* homepage hero styles and rules */
+
+#hero {
+	background-image: url("hero1.jpg");
+	background-size: cover;
+	height: 90vh;
+}
+
+#hero-chunk {
+	width: 400px;
+	color: #fff;
+	margin-top: 200px;
+	margin-left: 100px;
+}
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+#hero h5 {
+	padding-bottom: 30px;
+}
+
+a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+/* homepage mission statemetent styles and rules */
+#mission {
+	text-align: center;
+	color: #161616;
+	width: 680px;
+	margin: 80px auto;
+	margin-bottom: 160px;
+}
+
+#mission h2 {
+	padding-bottom: 60px;
+}
+
+#mission p {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#splash {
+	width: 100%;
+	height: 100vh;
+	margin-top: -100px;
+	background-image: url("splash.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Homepage product feature styles and rules */
+
+#feature {
+	margin-top: -470px;
+}
+
+.card-chunk span {
+	font-family: "GT-Light";
+	font-size: 34px;
+}
+
+.card-chunk h2 {
+	margin: 50px 0;
+}
+
+.card-chunk p {
+	margin-bottom: 50px;
+}
+
+a.CTAtoo {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	border-style: solid;
+}
+
+#paper {
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+	overflow: hidden;
+}
+
+#pencil {
+	background-color: #fff;
+	color: #161616;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 670px 470px;
+	column-gap: 30px;
+	overflow: hidden;
+}
+
+#video {
+	background-color: black;
+	width: 970px;
+	margin: -300px auto;
+	border-radius: 20px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#video video {
+	display: block;
+	margin: 0 auto;
+}
+
+#illust {
+	margin-top: -500px;
+	height: 570px;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+
+#illust h6 {
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	z-index: -1;
+}
+
+#illust img{
+	
+	position: absolute;
+	z-index: -2;
+
+}
+
+#product-grid {
+	width: 1170px;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+
+#newsletter {
+	height: 20vh;
+	margin-top: 40px;
+}
+
+#newsletter .row {
+	margin-bottom: 30px;
+}
+
+#newsletter .btn {
+	background-color: none;
+}
+
+#newsletter .btn:hover {
+	background-color: black;
+}
+
+.btn {
+	border-radius: 50px;
+}
+
+/********************************* ABOUT *******************************
+
+/* About Page styles and rules 
+
+div#hero {
+	height: 100vh;
+	position: relative; ****** can't do z-index without position propertty******
+	z-index: 0;
+	background: linear-gradient(to bottom, #339966 0%, #ffffff 100%);
+	overflow: hidden;
+}
+
+#who {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+}
+
+#why {
+	position: absolute;
+	top: 500px;
+	left: 750px;
+}
+
+
+**/
+
+/********************* ABOUT SCROLL **********************/
+
+/*
+body, html {
+  overflow: hidden;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+  color: #fff;
+  font-size: 120px;
+  white-space: nowrap;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  line-height: 1em;
+  margin: 50px 0;
+}
+
+
+.line-1 {
+	position: fixed;
+	top: 40%;
+	left: -800px;
+	white-space: nowrap;
+	color: #000;
+}
+*/
+
+#heroabout h3 {
+	margin-top: -150px;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+/*
+.line-1 {
+	margin: 0;
+	padding: 0;
+	height: 10050px;
+	overflow-x: hidden;
+	mix-blend-mode: difference;
+}
+
+
+.line-1 h1 {
+	margin-left: 1615px;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-40%);
+	white-space: nowrap;
+	left: 1615px;
+	font-size: 5em;
+	color: #fff;
+}
+*/
+
+.line-1 {
+	margin: 0;
+	padding: 0;
+	height: 3700px;
+	overflow-x: hidden;
+	mix-blend-mode: difference;
+}
+
+
+.line-1 h1 {
+	margin-left: 1615px;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-40%);
+	white-space: nowrap;
+	left: 1615px;
+	font-size: 5em;
+	color: #fff;
+}
+
+/********************************************************/
+
+#backgroundz {
+	background-image: url(graphite.jpg);
+	background-size: contain;
+	background-position: center;
+	margin-top: 90px;
+	margin-left: 3vw;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 91vh;
+	width: 91vw;
+	z-index: 0;
+}
+
+#backgroundzz {
+	background-image: url(graphite-back.jpg);
+	background-size: contain;
+	background-position: left;
+	margin-top: 90px;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 91vh;
+	width: 91vw;
+	z-index: -1;
+}
+
+#backgroundzzz {
+	background-image: url(graphite-back.jpg);
+	background-size: contain;
+	background-position: right;
+	margin-top: 90px;
+	margin-left: 9vw;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 91vh;
+	width: 91vw;
+	z-index: -1;
+}
+
+div#heroabout {
+	position: relative;
+	z-index: 2;
+}
+
+div#herowho {
+	position: relative;
+	z-index: 1;
+}
+
+div#herowhy {
+	position: relative;
+	z-index: 0;
+}
+
+div#herowhat {
+	position: relative;
+	z-index: 1;
+}
+
+div#herobuy {
+	position: relative;
+	z-index: 0;
+	margin-bottom: -200px;
+}
+
+
+.cssgrid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 65vh;
+}
+
+#main-who {
+	background-color: #161616;
+	border-radius: 3rem;
+	max-height: 530px;
+	padding-bottom: 600px;
+	margin-top: 230px;
+	grid-column-start: 8;
+	grid-column-end: 12;
+	color: #fff;
+	padding: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 3rem;
+}
+
+#main-why {
+	background-color: #161616;
+	border-radius: 3rem;
+	max-height: 500px;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	color: #fff;
+	padding: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 3rem;
+}
+
+#main-what {
+	background-color: #161616;
+	max-height: 440px;
+	border-radius: 3rem;
+	grid-column-start: 8;
+	grid-column-end: 12;
+	color: #fff;
+	padding: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 3rem;
+	margin-top: -100px;
+}
+
+#main-buy {
+	background-image: url(case.jpg);
+	background-size: cover;
+	background-position: left;
+	border-radius: 3rem;
+	max-height: 410px;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	color: #fff;
+	margin-top: -470px;
+	padding: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 3rem;
+}
+
+#arrow img {
+	position: relative;
+	margin-left: 60px;
+	height: 250px;
+	width: auto;
+	z-index: 5;
+}
+
+#main-who h2{
+	margin: 20px 20px;
+}
+
+#main-who p{
+	margin: 0px 20px;
+}
+
+#main-what h2{
+	margin: 20px 20px;
+}
+
+#main-what p{
+	margin: 0px 20px;
+}
+
+#main-why h2{
+	margin: 20px 20px;
+}
+
+#main-why p{
+	margin: 0px 20px;
+}
+
+#heroabout h3 {
+	color: #161616;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	grid-row-start: 3;
+}
+
+/********************* PENCIL **********************/
+
+#height-main {
+	position: relative;
+	height: 250px;
+	z-index: 1;
+}
+
+#scrolls {
+	position: fixed;
+	top: 25%;
+	text-align: left;
+	margin-left: 120px;
+}
+
+.card-scroll {
+	color: #A09F98;
+	position: fixed;
+	top: 25%;
+	text-align: left;
+	margin-left: 540px;
+}
+
+/* Scroller styling */
+.scroller {
+	height: 2.8em;
+	line-height: .4em;
+	overflow: hidden;
+	width: 50em;
+}
+.scroller > span {
+	position: absolute;
+	top: 0;
+	animation: slide 6.5s infinite;
+}
+
+@keyframes slide {
+	0% {
+	top: 0;
+	}
+	33.33% {
+	top: -3.7em;
+	}
+	66.66% {
+	top: -7.6em;
+	}
+}
+
+/********************* VIDEO **********************/
+
+/*
+
+.elementToFadeInAndOut {
+    width:200px;
+    height: 200px;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@media screen and (max-width: 650px) {
+    #hero-video {
+        display: none;
+    }
+}
+
+*/
+
+#set-height {
+  display: block;
+}
+
+#v0 {
+  position: fixed;
+  bottom: -50px;
+  left: 0;
+  width: 95vw;
+  z-index: -1;
+}
+
+p font-family helvetica {
+  font-size: 24px;
+}
+
+#background {
+	position: fixed;
+	top: 90px;
+}
+
+#height {
+	position: relative;
+	height: 10000px;
+	z-index: 1;
+}
+
+#overlay {
+	background-color: rgb(246, 246, 239);
+	z-index: 1;
+}
+
+/********************* CARD **********************/
+
+#main-pencil {
+	background-color: #161616;
+	background-image: url ;
+	color: #fff;
+	height: 920px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+#hero-pencil {	
+	background-size: cover;
+	height: 100vh;
+}
+
+/********************* SMALL CARDS *******************/
+
+.blackbox {
+	background-image: url(2.jpg);
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+	background-size: cover;
+	color: #fff;
+	position: relative;
+	border-radius: 20px;
+	margin-bottom: 400px;
+	padding: 100px;
+	height: 1000px;
+	text-align: left;
+	z-index: 4;
+}
+
+div#image-overlay {
+	background-image: url(brown-shavings.jpg);
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	margin-top: -1320px;
+	margin-bottom: 0px;
+	height: 100vh;
+}
+
+#details {
+	z-index: 5;
+}
+
+#details .col-6 {
+	margin: 0 auto;
+}
+
+#details2 {
+	margin: 0 330px 0px -250px;
+	max-width: 36vw;
+}
+
+#details h2 {
+	margin-bottom: 30px;
+}
+
+.small-cards {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	margin-top: 200px;
+}
+
+.card {
+	margin: 10px 15px;
+	background-color: rgba(255, 255, 255, .5);
+	border-color: none;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+
+.card-body {
+	color: #161616;
+}
+
+.card-title {
+	font-family: "GT-Super";
+	padding: 15px 5px;
+	text-align: left;
+}
+
+.card-text {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0 0 70px 0;
+	padding: 0px 5px;
+	text-align: left;
+}
+
+a.CTAtwo { /* WHY IS THIS NOT CENTERED????? */
+	position: absolute;
+	bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	border-color: #000;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	border-style: solid;
+	display: inline-block;
+	margin-top: 20px;
+	width: 260px;
+	text-align: center;
+}
+
+a.CTAtwo:hover {
+	position: absolute;
+	bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	background-color: #161616;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	border-style: solid;
+	display: inline-block;
+	margin-top: 20px;
+	width: 260px;
+	text-align: center;
+}
+
+
+
+/***************************************************/
+
+/* footer styles and rules*/
+
+footer {
+	background-color: #161616;
+	border-radius: 125px 125px 0px 0px;
+	position: relative;
+	z-index: 4;
+}
+
+footer h4 {
+	padding: 5rem 2rem 2rem 2rem;
+	font-family: "GT-Light";
+}
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px; 
+	padding: 0 5%;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer li {
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1204px) { /* media query is a mini css sheet INSIDE a mini css */
+	footer ul {
+		flex-direction: column;
+	}
+
+/* Don't forget to close the media query when you're done */
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	font-size: 14px;
+	padding-bottom: 40px;
+	color: #fff;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+#foot-links li {
+	text-align: left;
+}
+
+#foot-links img {
+	max-width: 70px;
+} 
+
+#foot-links {
+	margin-top: 50px;
+}
+
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

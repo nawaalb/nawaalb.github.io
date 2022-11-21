@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>53 redo Homepage</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+
+    <!-- One of the fonts we use is Poppins. I went to Google Fonts and copy&pasted the text for Poppins into my code. I also need the font family syntax for my CSS:
+      font-family: 'Poppins', sans-serif;
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="scriptpencil.jsssss">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body id="products">
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2" id="logo"> <!-- for a logo -->
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="Web53 Logo"></a> 
+          </div>
+          <nav class="col-md-7 offset-md-3"> <!-- this is our header navigation bar links section -->
+            <ul>
+              <li><a href="pencil.html">Pencil</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="https://wetransfer.com/">Wetransfer</a></li>
+              <li ><a id="search">What are you looking for?</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+<!--
+    <div class="container-fluid" id="hero-pencil">
+      <div class="container">
+        <div class="row">
+          <section id="hero-chunk-pencil">
+            <h1 class="tighten">NO. 2<br>PENCIL</h1>
+          </section>
+        </div>
+      </div> 
+    </div>
+
+-->
+
+    <section class="scroll">
+
+<!--
+
+      <div class="container-fluid" id="hero-sharper">
+        <div class="container">
+          <div class="row">
+            <section id="hero-chunk-sharper">
+              <h1 class="tighten">SHARPER</h1>
+              <h1 class="tighten">THAN</h1>
+              <h1 class="tighten">EVER</h1>
+              
+-->
+              
+              <div>
+                <div id="set-height"></div>
+              <video id="v0" tabindex="0" autobuffer preload>
+                <source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="53pencil2.mp4"></source>
+              </video>
+
+
+              <script>
+                var frameNumber = 0, // start video at frame 0
+                    // lower numbers = faster playback
+                    playbackConst = 500, 
+                    // get page height from video duration
+                    setHeight = document.getElementById("set-height"), 
+                    // select video element         
+                    vid = document.getElementById('v0'); 
+                    // var vid = $('#v0')[0]; // jquery option
+
+                // dynamically set the page height according to video length
+                vid.addEventListener('loadedmetadata', function() {
+                  setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+                });
+
+
+                // Use requestAnimationFrame for smooth playback
+                function scrollPlay(){  
+                  var frameNumber  = window.pageYOffset/playbackConst;
+                  vid.currentTime  = frameNumber;
+                  window.requestAnimationFrame(scrollPlay);
+                }
+
+                window.requestAnimationFrame(scrollPlay);
+              </script>
+              </div>
+              
+
+            </section>
+          </div>
+        </div> 
+      </div>
+    </section>
+ 
+<!--     
+
+    <section>
+      <div class="container-fluid" id="hero-than">
+        <div class="container">
+          <div class="row">
+            <section id="hero-chunk-than">
+              <h1 class="tighten">THAN</h1>
+            </section>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid" id="hero-ever">
+        <div class="container">
+          <div class="row">
+            <section id="hero-chunk-ever">
+              <h1 class="tighten">EVER</h1>
+              <img id="straight-pencil" src="images/straight-pencil2.png">
+            </section>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+
+
+    <div class="row" id="pencilvideo">
+      <video width="854" height="480">
+      <source src="53pencil2.mp4" type="video/mp4">
+    </div>
+
+-->
+
+    <section>
+      <div id="main-pencil">
+        <div class="card-chunk-pencil">
+          <h2>Crafted for Creativity</h2>
+          <p>Sharp minds require sharp tools. No. 2 Pencil’s wood body forms a perfectly cylindrical case for graphite, the part that leaves its mark on the page when you show it what to do. Built for writing, designed for doodles.</p>
+
+        <!--  <a class="CTAtoo">Try out Paper</a>  -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">Erase</h5>
+              <p class="card-text">No. 2 Pencil comes with a standard rubber eraser that lets you remove misspellings and wrong answers. <em>(Note: erasers are non-replaceable. Please order more than one No. 2 Pencil if you a make a lot of mistakes.)</em></p>
+              <a href="https://vimeo.com/60718161" class="CTAtwo">How To Sharpen Pencils</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">Look Sharp</h5>
+              <p class="card-text">The tip on your No. 2 Pencil should make it through first and second periods, but probably won’t last all day. To sharpen, we recommend this video:</p>
+              <a href="https://vimeo.com/60718161" class="CTAtwo">How To Sharpen Pencils</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">The Write Stuff</h5>
+              <p class="card-text">Writing as it should be: no user manuals, no electronic thingamabobs. Just use your No. 2 Pencil like a pen. In the right hands, it’s neat, affordable, and easy to use. <em>(In the wrong hands, someone loses an eye.)</em></p>
+              <a href="https://vimeo.com/60718161" class="CTAtwo">How To Sharpen Pencils</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row" id="partners"> <!-- partners -->
+          <h4>Made for today's teams</h4>
+          <ul class="col-12">
+            <li><img src="images/shopify.svg"></li>
+            <li><img src="images/airbnb.svg"></li>
+            <li><img src="images/scholastic.svg"></li>
+            <li><img src="images/sap.svg"></li>
+            <li><img src="images/intercom.svg"></li>
+          </ul>
+        </div>
+
+        <hr style="width: 100%; text-align: center; margin: 0; color: #fff;"> 
+
+        <div class="row" id="foot-links"> <!-- footer/sitemap -->
+          <div class="col-md-3"> <!-- for a logo on the footer-->
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="Web53 Logo"></a> 
+          </div>
+          <nav class="col-md-2" id="foot-prod">
+            <ul>
+              <li><span>Products</span></li>
+              <li><a href="pencil.html">Overview</li>
+              <li><a href="pencil.html">WeTransfer</a></li>
+              <li><a href="pencil.html">Paste&reg</a></li>
+              <li><a href="pencil.html">Collect</a></li>
+              <li><a href="https://wetransfer.com/paper">Paper&reg</a></li>
+              <li><a href="pencil.html">Pricing</a></li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-abo">
+            <ul>
+              <li><span>About Us</span></li>
+              <li><a href="pencil.html">Company</li>
+              <li><a href="pencil.html">Advertising</a></li>
+              <li><a href="pencil.html">B Corp</a></li>
+              <li><a href="pencil.html">Jobs</a></li>
+              <li><a href="pencil.html">Newsroom</a></li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-res">
+            <ul>
+              <li><span>Resources</span></li>
+              <li><a href="pencil.html">Help Center</li>
+              <li><a href="pencil.html">Accesseiblilty</a></li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-exp">
+            <ul>
+              <li><span>Explore</span></li>
+              <li><a href="pencil.html">WePresent</li>
+              <li><a href="pencil.html">Ideas Report</a></li>
+              <li><a href="pencil.html">Creative Hubs Index</a></li>
+              <li><a href="pencil.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <hr style="width: 100%; text-align: center; margin: 0; color: #fff;"> 
+
+        <div class="row"> <!-- erms/socials -->
+        
+               <div class="row" id="bottom">
+          <div class="col-md-3">
+            <ul id="socials">
+              <li id="twitter-icon">
+                <a href="http://www.twitter.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Path" d="M15.6,1.6a9,9,0,0,1-2.1.8,3.4,3.4,0,0,0-2.4-1.1,3.3,3.3,0,0,0-2.3,1,3.3,3.3,0,0,0-1,2.4,2.2,2.2,0,0,0,.1.8A8.4,8.4,0,0,1,4.1,4.4a8.1,8.1,0,0,1-3-2.5A3.5,3.5,0,0,0,.7,3.6,3,3,0,0,0,2.1,6.4,2.3,2.3,0,0,1,.7,6h0a3.1,3.1,0,0,0,.7,2.1A3.5,3.5,0,0,0,3.3,9.4H1.8A3,3,0,0,0,3,11.1a2.9,2.9,0,0,0,1.8.7,6.3,6.3,0,0,1-4,1.4H0a8.9,8.9,0,0,0,5,1.5,8.7,8.7,0,0,0,4-.9,8.6,8.6,0,0,0,3-2.3,14.9,14.9,0,0,0,1.8-3,10.6,10.6,0,0,0,.6-3.4V4.7A6.9,6.9,0,0,0,16,2.9a4.1,4.1,0,0,1-1.9.5A3.4,3.4,0,0,0,15.6,1.6Z" transform="translate(0 -1.3)"></path>
+                  </svg>
+                </a></li>
+              <li id="facebook-icon">
+                <a href="http://www.facebook.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Path" d="M2.3,0A2.3,2.3,0,0,0,0,2.3V13.8A2.2,2.2,0,0,0,2.3,16H8.5V9.8h-2V7.4h2V5.6a2.9,2.9,0,0,1,3.1-3.2h1.9V4.7H12.2c-1,0-1.2.5-1.2,1.2V7.4h2.4l-.3,2.4H11V16h2.8A2.2,2.2,0,0,0,16,13.8V2.3A2.2,2.2,0,0,0,13.8,0Z" transform="translate(0)"></path>
+                  </svg>
+                </a></li>
+              <li id="insta-icon">
+                <a href="http://www.instagram.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path class="instagram-icon-1" d="M16,4.7a7.8,7.8,0,0,0-.4-1.9,4.6,4.6,0,0,0-.9-1.5A4.6,4.6,0,0,0,13.2.4L11.3,0H4.7L2.8.4a4.6,4.6,0,0,0-1.5.9A4.6,4.6,0,0,0,.4,2.8,7.8,7.8,0,0,0,0,4.7v6.6a7.8,7.8,0,0,0,.4,1.9,4.6,4.6,0,0,0,.9,1.5,4.6,4.6,0,0,0,1.5.9l1.9.4h6.6l1.9-.4a4.6,4.6,0,0,0,1.5-.9,4.6,4.6,0,0,0,.9-1.5,7.8,7.8,0,0,0,.4-1.9V4.7Zm-1.5,6.5a3.8,3.8,0,0,1-.3,1.5,1.5,1.5,0,0,1-.6.9,1.5,1.5,0,0,1-.9.6,3.8,3.8,0,0,1-1.5.3H4.8a3.8,3.8,0,0,1-1.5-.3,1.5,1.5,0,0,1-.9-.6,1.5,1.5,0,0,1-.6-.9,3.8,3.8,0,0,1-.3-1.5A22.1,22.1,0,0,1,1.4,8a22.1,22.1,0,0,1,.1-3.2,3.8,3.8,0,0,1,.3-1.5,1.5,1.5,0,0,1,.6-.9,1.5,1.5,0,0,1,.9-.6,3.8,3.8,0,0,1,1.5-.3h6.4a3.8,3.8,0,0,1,1.5.3,1.5,1.5,0,0,1,.9.6,1.5,1.5,0,0,1,.6.9,3.8,3.8,0,0,1,.3,1.5A22.1,22.1,0,0,1,14.6,8,22.1,22.1,0,0,1,14.5,11.2Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M8,3.9A4.1,4.1,0,0,0,3.9,8,4.1,4.1,0,0,0,8,12.1,4.1,4.1,0,0,0,12.1,8,4.1,4.1,0,0,0,8,3.9Zm0,6.8A2.7,2.7,0,1,1,10.7,8,2.7,2.7,0,0,1,8,10.7Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M13.2,3.7a.9.9,0,0,1-.9,1,.9.9,0,0,1-1-1,.9.9,0,0,1,1-.9A.9.9,0,0,1,13.2,3.7Z" transform="translate(0 0)"></path>
+                </a></li>
+              <li id="youtube-icon">
+                <a href="http://www.youtube.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Shape" class="youtube-icon-1" d="M23.2,1.4A2.6,2.6,0,0,1,24,2.7a31.7,31.7,0,0,1,.5,5.8,31.7,31.7,0,0,1-.5,5.8,2.2,2.2,0,0,1-.8,1.3,2.6,2.6,0,0,1-1.3.8c-1.9.5-9.4.5-9.4.5s-7.5,0-9.4-.5a2.2,2.2,0,0,1-1.3-.8A2.2,2.2,0,0,1,1,14.3,31.7,31.7,0,0,1,.5,8.5,31.7,31.7,0,0,1,1,2.7a2.6,2.6,0,0,1,.8-1.3A2.2,2.2,0,0,1,3.1.6C5,.1,12.5.1,12.5.1s7.5,0,9.4.5A2.6,2.6,0,0,1,23.2,1.4ZM16.3,8.5,10.1,4.9v7.2Z" transform="translate(-0.5 -0.1)"></path>
+                  </svg>
+                </a></li>  
+            </ul>
+          </div>
+          <div class="col-md-auto"></div>
+          <div class="col-md-4">
+            <div id="legal">
+              <a href="#">Terms</a>
+              |
+              <a href="#">Privacy</a>
+              <span>&copy2022 WeTransfer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="why">
+        <h2>What</h2>
+        <p>Over the years we noticed that software that's designed to help us be creative actually made us less creative. Ideas aren't born in slide decks, documents, or image editors. They begin freeform. On paper. In conversations. As sketches. <br>
+        We founded FiftyThree to build tools that work the way we do. Tools for the creative space - the 53 centimeters that magically link head heart, and hand. Tools as simple as pencil and paper. Tools so essential, we really can't imagine working without them.
+        </p>
+      </div>
+
+      <div id="what">
+        <h2>What</h2>
+        <p>In March 2012, we launched Paper by FiftyThree, the simplest and most beautiful way to create on the iPad. Since then, Paper has been downloaded millions of times, and it has won the Apple Design Award, Crunchies Award, AIGA Award, IxDA Award, and Apple's App of the Year. <br>
+        In December of 2013, we released Pencil. The Verge called it "the best iPad stylus yet", in part because of the way Pencil seamlessly integrates with Paper. <br>
+        We're pleased to have received such a warm welcome, but we still have much work to do. Our ambition is no less than to change the way people create, and we're building world-class teams in NYC and Seattle to take on this challenge. There are many more apps, services, and hardware products to come.
+        </p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
