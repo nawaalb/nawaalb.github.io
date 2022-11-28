@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>53 redo Homepage</title>
+    <title>FiftyThree Redesign</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
 
-    <!-- One of the fonts we use is Poppins. I went to Google Fonts and copy&pasted the text for Poppins into my code. I also need the font family syntax for my CSS:
-      font-family: 'Poppins', sans-serif;
-     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+
+                        <!-- This is where all the body content begins -->
+
+  <body id="home">
     <header class="container-fluid">
       <div class="container">
         <div class="row">
@@ -36,7 +35,7 @@
       </div>
     </header>
 
-    <div class="container-fluid" id="hero">
+    <div class="container-fluid" id="hero"> <!-- This is the hero section -->
       <div class="container">
         <div class="row">
           <section id="hero-chunk">
@@ -54,43 +53,41 @@
       <p>The best tools don’t require a lot of fuss - they just work.<br>Whether you are coloring inside the lines or thinking outside the box, our Apps and peripherals make the process feel quick and intuitive.</p>
     </section>
 
-    <section id="splash">
-      
-    </section>
+    <section id="splash"></section> <!-- This is the image with the splash graphics -->
 
     <section class="container-fluid" id="feature">
       <div id="paper">
         <div class="card-chunk">
-          <h2>Paper<br><span>Sketch, paint,<br>and create</span></h2>
-          <p>Create expressive sketches, rich paintings, beautiful illustrations and more with an intuitive tool designed to mimic your natural gestures.</p>
+          <h2 id="ducky">Paper<br><span>Sketch, paint,<br>and create</span></h2>
+          <p id="ducky2">Create expressive sketches, rich paintings, beautiful illustrations and more with an intuitive tool designed to mimic your natural gestures.</p>
           <a class="CTAtoo">Try out Paper</a>
         </div>
-        <div>
+        <div id="duck">
           <img src="images/paper-detail.png" alt="Pencil product shown drawing a building">
         </div>
       </div>
       <div id="pencil">
         <div class="card-chunk">
-            <img src="images/amazon.jpg" alt="Pencil product shown drawing a building">
-          </div>
-          <div class="card-chunk">
-            <h2>Pencil<br><span>Think with your hands</span></h2>
-            <p>The most natural and expressive tool for getting ideas on Paper. Rest your hand comfortably on the screen and draw, erase, and blend with ease.</p>
-            <a>Buy Pencil on Amazon</a>
-          </div>
+          <img src="images/amazon.jpg" alt="Pencil product shown drawing a building">
+        </div>
+        <div class="card-chunk">
+          <h2>Pencil<br><span>Think with your hands</span></h2>
+          <p>The most natural and expressive tool for getting ideas on Paper. Rest your hand comfortably on the screen and draw, erase, and blend with ease.</p>
+          <a>Buy Pencil on Amazon</a> 
+        </div>
       </div>
-      <div class="row" id="video">
+      <div class="row" id="video"> <!-- This is the youtube video -->
         <video width="854" height="480" controls>
         <source src="53video.mp4" type="video/mp4">
       </div>
     </section>
 
-    <section class="container-fluid" id="illust">
+    <section class="container-fluid" id="illust"> <!-- This is the background illustration -->
       <h6>José Antonio Roda</h6>
       <img src="images/Antonio_graphic.png" alt="Antonio Illustration">
     </section>
 
-    <section class="container-fluid" id="products">
+    <section class="container-fluid" id="products"> <!-- This is the various products -->
       <div>
         <ul id="product-grid">
           <li><a>Paper<br><p>Creativity App</p></a></li>
@@ -101,9 +98,9 @@
       </div>
     </section>
 
-    <section class="container text-center" id="newsletter">
+    <section class="container text-center" id="newsletter"> <!-- This is the newsletter -->
       <div class="row">
-        <h2>Sign up for our newsletter. it's great.</h2>
+        <h2>Sign up for our newsletter. It's great.</h2>
       </div>
       <div class="row">
         <div class="col-lg-6 offset-lg-2">
@@ -111,13 +108,11 @@
         </div>
         <div class="col-lg-2">
           <button type="button" class="btn btn-outline-success">Sign Me Up</button>
-          
         </div>
-        
       </div>
     </section>
 
-    
+                                <!-- This is where the footer begins -->
 
     <footer class="container-fluid">
       <div class="container">
@@ -179,9 +174,7 @@
 
         <hr style="width: 100%; text-align: center; margin: 0; color: #fff;"> 
 
-        <div class="row"> <!-- erms/socials -->
-        
-               <div class="row" id="bottom">
+        <div class="row" id="bottom">
           <div class="col-md-3">
             <ul id="socials">
               <li id="twitter-icon">
@@ -190,14 +183,16 @@
                     <title></title>
                     <path id="Path" d="M15.6,1.6a9,9,0,0,1-2.1.8,3.4,3.4,0,0,0-2.4-1.1,3.3,3.3,0,0,0-2.3,1,3.3,3.3,0,0,0-1,2.4,2.2,2.2,0,0,0,.1.8A8.4,8.4,0,0,1,4.1,4.4a8.1,8.1,0,0,1-3-2.5A3.5,3.5,0,0,0,.7,3.6,3,3,0,0,0,2.1,6.4,2.3,2.3,0,0,1,.7,6h0a3.1,3.1,0,0,0,.7,2.1A3.5,3.5,0,0,0,3.3,9.4H1.8A3,3,0,0,0,3,11.1a2.9,2.9,0,0,0,1.8.7,6.3,6.3,0,0,1-4,1.4H0a8.9,8.9,0,0,0,5,1.5,8.7,8.7,0,0,0,4-.9,8.6,8.6,0,0,0,3-2.3,14.9,14.9,0,0,0,1.8-3,10.6,10.6,0,0,0,.6-3.4V4.7A6.9,6.9,0,0,0,16,2.9a4.1,4.1,0,0,1-1.9.5A3.4,3.4,0,0,0,15.6,1.6Z" transform="translate(0 -1.3)"></path>
                   </svg>
-                </a></li>
+                </a>
+              </li>
               <li id="facebook-icon">
                 <a href="http://www.facebook.com" target="_blank">
                   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
                     <title></title>
                     <path id="Path" d="M2.3,0A2.3,2.3,0,0,0,0,2.3V13.8A2.2,2.2,0,0,0,2.3,16H8.5V9.8h-2V7.4h2V5.6a2.9,2.9,0,0,1,3.1-3.2h1.9V4.7H12.2c-1,0-1.2.5-1.2,1.2V7.4h2.4l-.3,2.4H11V16h2.8A2.2,2.2,0,0,0,16,13.8V2.3A2.2,2.2,0,0,0,13.8,0Z" transform="translate(0)"></path>
                   </svg>
-                </a></li>
+                </a>
+              </li>
               <li id="insta-icon">
                 <a href="http://www.instagram.com" target="_blank">
                   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
@@ -205,14 +200,16 @@
                     <path class="instagram-icon-1" d="M16,4.7a7.8,7.8,0,0,0-.4-1.9,4.6,4.6,0,0,0-.9-1.5A4.6,4.6,0,0,0,13.2.4L11.3,0H4.7L2.8.4a4.6,4.6,0,0,0-1.5.9A4.6,4.6,0,0,0,.4,2.8,7.8,7.8,0,0,0,0,4.7v6.6a7.8,7.8,0,0,0,.4,1.9,4.6,4.6,0,0,0,.9,1.5,4.6,4.6,0,0,0,1.5.9l1.9.4h6.6l1.9-.4a4.6,4.6,0,0,0,1.5-.9,4.6,4.6,0,0,0,.9-1.5,7.8,7.8,0,0,0,.4-1.9V4.7Zm-1.5,6.5a3.8,3.8,0,0,1-.3,1.5,1.5,1.5,0,0,1-.6.9,1.5,1.5,0,0,1-.9.6,3.8,3.8,0,0,1-1.5.3H4.8a3.8,3.8,0,0,1-1.5-.3,1.5,1.5,0,0,1-.9-.6,1.5,1.5,0,0,1-.6-.9,3.8,3.8,0,0,1-.3-1.5A22.1,22.1,0,0,1,1.4,8a22.1,22.1,0,0,1,.1-3.2,3.8,3.8,0,0,1,.3-1.5,1.5,1.5,0,0,1,.6-.9,1.5,1.5,0,0,1,.9-.6,3.8,3.8,0,0,1,1.5-.3h6.4a3.8,3.8,0,0,1,1.5.3,1.5,1.5,0,0,1,.9.6,1.5,1.5,0,0,1,.6.9,3.8,3.8,0,0,1,.3,1.5A22.1,22.1,0,0,1,14.6,8,22.1,22.1,0,0,1,14.5,11.2Z" transform="translate(0 0)"></path>
                     <path class="instagram-icon-1" d="M8,3.9A4.1,4.1,0,0,0,3.9,8,4.1,4.1,0,0,0,8,12.1,4.1,4.1,0,0,0,12.1,8,4.1,4.1,0,0,0,8,3.9Zm0,6.8A2.7,2.7,0,1,1,10.7,8,2.7,2.7,0,0,1,8,10.7Z" transform="translate(0 0)"></path>
                     <path class="instagram-icon-1" d="M13.2,3.7a.9.9,0,0,1-.9,1,.9.9,0,0,1-1-1,.9.9,0,0,1,1-.9A.9.9,0,0,1,13.2,3.7Z" transform="translate(0 0)"></path>
-                </a></li>
+                </a>
+              </li>
               <li id="youtube-icon">
                 <a href="http://www.youtube.com" target="_blank">
                   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
                     <title></title>
                     <path id="Shape" class="youtube-icon-1" d="M23.2,1.4A2.6,2.6,0,0,1,24,2.7a31.7,31.7,0,0,1,.5,5.8,31.7,31.7,0,0,1-.5,5.8,2.2,2.2,0,0,1-.8,1.3,2.6,2.6,0,0,1-1.3.8c-1.9.5-9.4.5-9.4.5s-7.5,0-9.4-.5a2.2,2.2,0,0,1-1.3-.8A2.2,2.2,0,0,1,1,14.3,31.7,31.7,0,0,1,.5,8.5,31.7,31.7,0,0,1,1,2.7a2.6,2.6,0,0,1,.8-1.3A2.2,2.2,0,0,1,3.1.6C5,.1,12.5.1,12.5.1s7.5,0,9.4.5A2.6,2.6,0,0,1,23.2,1.4ZM16.3,8.5,10.1,4.9v7.2Z" transform="translate(-0.5 -0.1)"></path>
                   </svg>
-                </a></li>  
+                </a>
+              </li>  
             </ul>
           </div>
           <div class="col-md-auto"></div>
@@ -225,17 +222,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </footer>
 
-
-
-
-
-
-
-
+                              <!-- This is the 3rd boostrap script -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
