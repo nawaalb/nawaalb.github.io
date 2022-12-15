@@ -1,0 +1,503 @@
+/* Stylesheet for the Ptarmigan redesign
+
+/*** GLOBAL STYLING ***/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+img {
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "Archivo";
+    src: url('https://fonts.googleapis.com/css2?family=Monoton&family=Rajdhani:wght@300&family=Raleway+Dots&display=swap');  /* example */
+}
+
+@font-face {
+    font-family: "Hind";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");  /* example */
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('https://fonts.googleapis.com/css2?family=Monoton&family=Rajdhani:wght@300&family=Raleway+Dots&display=swap');  /* example */
+}
+
+body {
+	font-family: 'Archivo';
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+}
+
+h1 {
+	justify-content: center;
+	font-family: "Archivo";
+	font-size: 40px;
+	font-weight: bold;
+	margin: 1;
+	color: ;
+}
+
+h2 {
+	font-family: "Archivo";
+	font-size: 32px;
+	font-weight: 600;
+	margin: 0 auto;
+}
+
+h3 {
+	font-family: 'Archivo', sans-serif;
+	color: ;
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+p {
+	font-family: 'Hind';
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0 auto;
+}
+
+#slider {
+	background-color: #fff;
+	color: #000;
+}
+
+div>#slider-nav a {
+	color: #000;
+}
+
+.col-md-8 {
+	margin: 0 auto;
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.col-md-6 {
+	margin: 0 auto;
+}
+
+div>.socials img {
+	height: 25px;
+	width: auto;
+	float: left;
+	padding-right: 25px;
+}
+
+.story, .customs, .sustainable, .timeless {
+	height: 100vh;
+}
+
+
+
+/* HEADER STYLING */
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Proxima Nova';
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+	padding-right: 32px;
+}
+
+
+
+/** HEADER STYLING **/
+header {
+	color: #fff;
+	font-size: 14px;
+	padding-top: 30px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+header li {
+	float: left;
+}
+
+#free {
+	display: inline-block;
+	background-color: #fff;
+	color: #000;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	width: 216px;
+}
+
+#free a {
+	line-height: 100px;
+}
+
+#free:hover {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+/* HERO SECTION */
+.heromain {
+	height: 87.9vh;
+}
+
+.hero-img {
+	background-image: url(../images/wood.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: center;
+}
+
+p {
+	padding-top: 35px;
+	padding-bottom: 100px;
+}
+
+#hero-text {
+	margin-top: 11%;
+	margin-bottom: 25px;
+}
+
+#trees {
+	position: relative;
+	z-index: 1;
+	width: 65vw;
+	margin: 7.75% auto 0 auto;
+}
+
+
+
+/* OUR STORY */
+#ourstory {
+	background-image: url(../images/will-suddreth-o54RjF-C7xo-unsplash.jpg);
+}
+
+.story {
+	background-color: #fff;
+	color: #000;
+}
+
+#story {
+	background-color: #fff;
+	color: #000;
+	height: 95vh;
+}
+
+
+
+/* VIDEO */
+#wood {
+	position: relative;
+	z-index: 1;
+	margin-top: -130px;
+	margin-bottom: 0;
+}
+
+video { 
+	display: block;
+	overflow:hidden;
+	width: 100vw;
+	height: auto;	
+}
+
+
+/* HAND-CRAFTED */
+#customs {
+	background-image: url(../images/PIXNIO-287366-3474x2316.jpeg);
+	margin-bottom: 120px;
+}
+
+#customs2 {
+	background-color: #fff;
+	color: #000;
+}
+
+#section-3 {
+	margin-top: 100px;
+}
+
+/* TESTAMONIALS */
+#testamonials {
+	color: #fff;
+	background-image: url(../images/bark.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+#we {
+	margin-top: 140px;
+	margin-bottom: 75px;
+}
+
+.column h3 {
+	padding-bottom: 15px;
+}
+
+.column h5 {
+	margin-bottom: 140px;
+}
+
+
+/* NUMBER COUNTER */
+
+
+
+/* SUSTAINABLE */
+.sustainable {
+	height: 100vh;
+	background-image: url(../images/johannes-plenio-Enhs8UrXEb0-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#section-4 {
+	margin-top: 75vh;
+}
+
+/* TIMELESS */
+#timeless {
+	background-image: url(../images/will-suddreth-o54RjF-C7xo-unsplash.jpg);
+	margin-bottom: 120px;
+}
+
+#section-5 {
+	margin-top: 100px;
+}
+
+
+/* CONTACT US */
+.contact {
+	background-image: url(../images/stamped2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 65vh;
+	margin-top: 40px;
+}
+
+#section-6 {
+	padding-top: 400px;
+	text-align: left;
+	align-content: left;
+	margin-bottom: 20px;
+}
+
+#quote {
+	font-size: 22px;
+	align-content: left;
+	text-align: left;
+}
+
+.card {
+	margin-top: -290px;
+	background-color: #fff;
+	border-radius: 8px;
+	border-color: #fff;
+	color: #000;
+	text-align: left;
+	max-width: 450px;
+	grid-column-start: 7;
+
+}
+
+#card-info {
+	margin: 0 auto;
+}
+
+#card-info p {
+	border-bottom: 1px solid #000;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#request {
+	border-bottom: 1px solid #fff;
+	font-size: 14px;
+	padding-bottom: 0px;
+	margin: 10px auto 0 auto;
+	width: 350px;
+}
+
+.select {
+	overflow: hidden;
+	padding-top: 40px;
+	border-bottom: 1px solid #000;
+}
+
+select {
+	font-family: 'Hind';
+	font-weight: 300;
+	font-size: 16px;
+	color: #000;
+	width: 350px;
+	background-color: #fff;
+	border: none;
+	margin-left: -4px;
+}
+
+#submit {
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	padding: 1rem 20px;
+	width: 350px;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	font-weight: 400;
+	margin: 50px 0 96px 0;
+}
+
+#submit:hover {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#submit a {
+	line-height: 100px;
+}
+
+
+
+
+
+
+/* FOOTER STYLING */
+footer {
+	text-align: left;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-top: -305px;
+}
+
+.grid-container2 {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-top: -260px;
+}
+
+#address {
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	grid-column-start: 9;
+	grid-column-end: 10;
+}
+
+#ourcontact {
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	grid-column-start: 10;
+	grid-column-end: 11;
+}
+
+#copyright {
+	font-size: 14px;
+	font-weight: 400;
+	grid-column-start: 9;
+	margin-top: 205px;
+}
+
+#socials-foot {
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+#foot {
+	margin-top: 110px;
+}
+
+#our {
+	font-size: 14px;
+	padding: 0px;
+}
+
+span {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#underline {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
