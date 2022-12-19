@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1663.5px" height="1108.7px" viewBox="0 0 1663.5 1108.7" style="enable-background:new 0 0 1663.5 1108.7;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.95;fill:#FFFFFF;enable-background:new    ;}
+</style>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="1663.5,1108.7 1663.5,0 0,0 380,1108.7 		"/>
+	</defs>
+	<clipPath id="SVGID_00000018222648379258709030000016026915969499062177_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000018222648379258709030000016026915969499062177_);">
+		
+			<image style="overflow:visible;" width="1750" height="1167" xlink:href="../../../../../texture.png"  transform="matrix(0.9506 0 0 0.9506 -5.000000e-02 -0.3251)">
+		</image>
+	</g>
+</g>
+<polygon class="st0" points="1663.5,1108.7 1663.5,0 0,0 380,1108.7 "/>
+</svg>
